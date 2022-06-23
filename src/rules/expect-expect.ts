@@ -93,6 +93,8 @@ export default createRule<
 
         if (node.type === AST_NODE_TYPES.FunctionDeclaration) {
           const declaredVariables = context.getDeclaredVariables(node);
+          var testvar = 1;
+          let myvar = "test";
           const testCallExpressions =
             getTestCallExpressionsFromDeclaredVariables(
               declaredVariables,
